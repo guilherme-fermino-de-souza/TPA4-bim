@@ -1,0 +1,23 @@
+package questTwo;
+
+import java.util.Scanner;
+public class quesTwoTwo {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		
+		final int TAM = 5;
+		int a[],r=0,m=0,i;
+		a = new int[TAM];
+		
+		for(i=0;i<TAM;i++) {
+			System.out.println("insira o "+(i+1)+"° número");
+			a[i] = in.nextInt();
+			m++;
+			r = i*m;
+			
+		}
+
+	}
+
+}
