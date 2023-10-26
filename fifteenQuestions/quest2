@@ -1,23 +1,27 @@
 package questTwo;
 
 import java.util.Scanner;
-public class quesTwoTwo {
+
+public class questTwoTwo {
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner (System.in);
+		Scanner in = new Scanner(System.in);
 		
-		final int TAM = 5;
-		int a[],r=0,m=0,i;
+		final int TAM = 5; //definir constante
+		int i, m, r=0, c=0, a[];
+		
 		a = new int[TAM];
 		
-		for(i=0;i<TAM;i++) {
-			System.out.println("insira o "+(i+1)+"° número");
+		for (i=0; i<TAM; i++) {
+			System.out.println("insira o "+(c+1)+"° valor que você quer que seja calculado");
 			a[i] = in.nextInt();
-			m++;
-			r = i*m;
-			
+			c++;
+			for (m=1; m<11; m++) {
+				r = a[i]*m;
+				System.out.println( (a[i]) +" + " +m+ " = " + r);		
+			}
 		}
-
+     System.out.println("fim do programa");
 	}
 
 }
