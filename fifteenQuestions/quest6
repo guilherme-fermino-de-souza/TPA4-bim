@@ -1,0 +1,26 @@
+package questSix;
+
+import java.util.Scanner;
+
+public class questSixSix {
+
+	public static void main(String[] args) {
+		// vetor de 0 a 10 e mostrar ao quadrado;
+		Scanner in = new Scanner(System.in);
+		
+		final int TAM = 11; //definindo a constante
+		int i, r=1, p=0, a[];
+		a = new int[TAM];
+		
+		for (i=0; i<TAM; i++) {
+			System.out.println("insira o "+r+"° número que você deseja que eu calcule a potência;");
+			a[i] = in.nextInt();
+			p = a[i]*a[i];
+			System.out.println("O quadrado de "+(a[i])+" é "+p);
+			r++;
+		}
+		System.out.println("fim do programa");
+	}
+	
+
+} //Feito
