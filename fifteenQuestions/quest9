@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class questNineeeNi {
+	public static void main(String[] args) {
+		//criar um vetor A e B, mais um C que mostra a intersecção  dos dois anteriores;
+		Scanner in = new Scanner(System.in);
+		final int TAM = 10; //definindo uma constante de tamanho 10
+		int i=0, valA, valB, a[], b[], c[];
+		
+		
+		a = new int[TAM];
+		b = new int[TAM];
+		c = new int[TAM];
+
+		for (i=0; i<TAM; i++) {  //vetor A
+			System.out.println("insira o "+(i+1)+"° valor do vetor A");
+			valA = in.nextInt();	
+			a[i] = valA;
+			//vetor B
+			System.out.println("insira o "+(i+1)+"° valor do vetor B");
+			valB = in.nextInt();	
+			b[i] = valB;
+		}
+		
+		do{ //vetor C
+			if ((a[i]%b[i])==0) {
+				c[i] = a[i];
+				System.out.println("A intersecção desses resulta em: C = ["+c[i]+"].");
+			}	else {
+			c[i] = c[i];
+			System.out.println("A intersecção desses resulta em: C = ["+c[i]+"].");
+			}
+			i--;
+		}	while(i>0);
+		System.out.println("A intersecção desses resulta em: C = ["+c[i]+"].");
+		System.out.println("fim do programinhaaaaaaaa.");
+		
+	}
+}
