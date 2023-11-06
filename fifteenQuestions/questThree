@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class questTreieixTr {
+	 public static void main(String[] args) {
+	        Scanner in = new Scanner(System.in);
+
+	        // Programa que efetua a verificação de se um número é primo ou composto.
+	        
+	        
+	        final int TAM=10;				 // Definindo uma constante para o primeiro programa.
+	        int i, a[], t, divs;
+	        a = new int[TAM];
+	        
+	        System.out.println("Algoritmo - Verificação de números:");
+
+	        // Lendo dez números e verificando se são primos ou não.
+	        for(i=0; i<TAM; i++) {
+	            System.out.println("Insira o " + (i + 1) + "° número do qual você deseja saber a definição:");
+	            a[i] = in.nextInt();
+
+	        // Se menor ou igual a 1, o programa entende o valor como não pertencente aos primos.
+	            if(a[i] < 2) {
+	                System.out.println(a[i]+" não é primo.");
+	            }
+	            
+	            // Igual ou superior a 2, todo valor passa para a fase de verificação.
+	            
+	            	else{
+	            		t=0;		// Contador T ativado.
+	            		
+	   // Para determinar se é primo, verifica se é divisível por algum número entre 2 e o próprio número, exceto esses. Se encontrar um DIVisor, incrementa 1 ao contador "t".
+	            		for (divs=2; divs<a[i]; divs++) {
+	            			if (a[i]%divs == 0) {
+	            				t++;
+	            			}	else {
+	            				t = t * 1;
+	            			}
+	            		}
+	            				
+	            		// Se o contador mantiver-se nulo após a verifi. o valor é primo; senão, é composto. 		
+	            		if (t == 0) {
+	            			System.out.println(a[i]+" é primo.");
+	            			} else {
+	            				System.out.println(a[i]+" não é primo.");
+	            			}
+	            	}
+	        }
+	        // GG, finalizado.
+	        System.out.println("Fim do Programa.");
+	 }
+}
