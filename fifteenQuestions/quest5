@@ -1,0 +1,29 @@
+package questFive;
+
+import java.util.Scanner;
+
+public class questFiveFive {
+
+	public static void main(String[] args) {
+		//programa com 10 vetores que lê os divisores do mesmo;
+		
+		Scanner in = new Scanner(System.in);
+		final int TAM = 10; //definindo a constante
+		int i, c, r=1, a[];
+		a = new int[TAM];
+		
+		for (i=0; i<TAM; i++) {  //escolha do vetor
+			
+			System.out.println("insira o "+r+"° número que você quer que eu calcule os divisores");
+			a[i] = in.nextInt();
+			r++;
+			for (c=1; c<=a[i]; c++) {  //divisor
+				if ((a[i])%c<=0) {
+					System.out.println(c);
+				} 
+			}
+		}
+		System.out.println("fim do programa");
+	}
+
+}  //Feito
