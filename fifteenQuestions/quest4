@@ -1,0 +1,31 @@
+package questFour;
+
+import java.util.Scanner;
+
+public class questFourFour {
+
+	public static void main(String[] args) {
+	  Scanner in = new Scanner(System.in);
+	  //ler dez valores e informar os números pares em sua composição;
+	  
+	  final int TAM = 10;
+	  int i, d, r=1, a[];
+	  
+	  a = new int[TAM];
+	  
+	  for (i=0; i<TAM; i++) {
+		  System.out.println("insira o "+r+"° valor");
+		  a[i] = in.nextInt();
+		  r++;
+		  for (d=0; d<a[i];) {
+			  d = d+1;
+			  if (d%2<=0) {
+				  System.out.println(d);
+			  }
+			
+		  }
+	  }
+	  System.out.println("fim do programa");
+	}
+
+}  //Feito
