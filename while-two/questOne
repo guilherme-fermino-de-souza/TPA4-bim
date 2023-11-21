@@ -1,0 +1,22 @@
+package newListWhileQuest1One;
+
+public class WhileQuest1 {
+
+	public static void main(String[] args) {
+	double j=134, p=145;
+	int an=0;
+	while (j <= p) {
+		j = j + (25/10);
+		p = p + 2;
+		an = an + 1;
+	
+	
+	}
+	System.out.println("Jo�o ter�" + j + "m de altura." );
+	System.out.println("Pedro ter� p);
+	System.out.println("Jo�o levar� " + an + " anos para ser mais alto que Pedro.");
+	
+	
+	}
+
+}
