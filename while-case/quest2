@@ -1,0 +1,24 @@
+package questTwu;
+import java.util.Scanner;
+public class questTwuTwu {
+
+	public static void main(String[] args) {
+
+			Scanner in = new Scanner (System.in);
+			int i;
+			System.out.println("Insira um valor nulo ou par próximo de zero.");
+			i = in.nextInt();
+			
+				while (i<=500) {	
+				System.out.println(i);
+				i = i + 2;
+
+				}
+				System.out.println("Números pares de " + (i-500) + " a 500.");
+			
+				in.close();
+			}
+			
+
+	}
+
