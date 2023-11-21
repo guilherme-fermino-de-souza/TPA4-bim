@@ -1,0 +1,19 @@
+package questThree;
+
+import java.util.Scanner;
+
+public class questThreeThree {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int i=1,n,r;
+		System.out.println("dígite o número");
+		n =in.nextInt();
+		while (i<=10){
+			r = n*i;
+			System.out.println(n+"*"+i+"="+r);
+			i++;
+		}	
+		}
+
+	}
