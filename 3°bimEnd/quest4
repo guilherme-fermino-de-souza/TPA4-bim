@@ -1,0 +1,18 @@
+package questFour;
+
+import java.util.Scanner;
+
+public class questFourFour {
+
+	public static void main(String[] args) {
+    
+     int r=0,t=0;
+     
+     for(int n=13;n<74;n++) {
+    	 r = r+n;
+     }
+     t = r/60;
+     System.out.println(t);
+
+     }
+}
