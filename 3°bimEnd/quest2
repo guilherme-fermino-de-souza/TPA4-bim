@@ -1,0 +1,20 @@
+package questTwoTwo;
+
+import java.util.Scanner;
+
+public class questTwoTwo {
+
+	public static void main(String[] args) {
+		 Scanner in = new Scanner(System.in);       
+		double t=0,r,n;
+		 System.out.println("insira o número que voccê deseja");  
+		 n = in.nextInt();            
+		 for (double d=2;d<n;d++) {
+			 r = n/d;  
+		
+			
+		 }
+			 
+		 System.out.println(t); 	}
+	}
+
